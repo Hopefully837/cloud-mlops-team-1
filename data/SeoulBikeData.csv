@@ -1,4 +1,4 @@
-Rented Bike Count,Hour,Temperature(°C),Humidity(%),Rainfall(mm),Snowfall (cm),Seasons,Holiday,Functioning Day
+Rented Bike Count,Hour,Temperature(Â°C),Humidity(%),Rainfall(mm),Snowfall (cm),Seasons,Holiday,Functioning Day
 254,0,-5.2,37,0,0,Winter,No Holiday,Yes
 204,1,-5.5,38,0,0,Winter,No Holiday,Yes
 173,2,-6,39,0,0,Winter,No Holiday,Yes
