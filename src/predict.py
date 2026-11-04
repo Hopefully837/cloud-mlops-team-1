@@ -5,6 +5,7 @@
 """
 import datetime
 import hashlib
+import math
 import os
 from pathlib import Path
 
@@ -73,6 +74,9 @@ def validate(payload):
         # bool은 숫자로 취급하지 않고, "25"처럼 숫자처럼 생긴 문자열도 거부한다
         if isinstance(value, bool) or not isinstance(value, (int, float)):
             errors.append({'field': field, 'reason': f'{label}은(는) 숫자여야 합니다'})
+        elif not math.isfinite(value):
+            # NaN은 모든 비교가 False라 아래 범위 검사를 통과하고, hour의 int(NaN·inf)는 500을 낸다
+            errors.append({'field': field, 'reason': f'{label}은(는) 유한한 숫자여야 합니다'})
         elif field == 'hour' and value != int(value):
             errors.append({'field': field, 'reason': f'{label}은(는) 정수여야 합니다'})
         elif (low is not None and value < low) or (high is not None and value > high):
