@@ -1,0 +1,19 @@
+# 로컬·EC2에서 같은 방식으로 실행한다.
+#   BUILD_REVISION=$(git rev-parse --short HEAD) docker compose up -d --build
+#   curl http://127.0.0.1:8000/health   # build_revision이 방금 만든 커밋과 같은지 확인
+services:
+  api:
+    build:
+      context: .
+      args:
+        BUILD_REVISION: ${BUILD_REVISION:-dev}
+    image: bike-api:${BUILD_REVISION:-dev}
+    container_name: bike-api
+    ports:
+      - "8000:8000"
+    environment:
+      # 설정하면 예측·피드백 로그를 CloudWatch Logs로 보낸다. EC2에서는 인스턴스 IAM 역할을 쓴다 (액세스 키를 넣지 않는다)
+      CLOUDWATCH_LOG_GROUP: ${CLOUDWATCH_LOG_GROUP:-}
+      CLOUDWATCH_LOG_STREAM: ${CLOUDWATCH_LOG_STREAM:-}
+      AWS_REGION: ${AWS_REGION:-ap-northeast-2}
+    restart: unless-stopped

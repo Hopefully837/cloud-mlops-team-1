@@ -8,6 +8,7 @@
 
 예측·피드백은 src/event_log.py로 JSON 한 줄씩 남긴다 (형식: docs/logging.md).
 """
+import os
 import time
 import uuid
 from collections import OrderedDict
@@ -19,6 +20,9 @@ from fastapi.responses import FileResponse, JSONResponse
 from src import event_log, predict
 
 state = {'model': None, 'error': None, 'model_version': None}
+
+# 배포한 코드 버전(커밋 번호). 이미지를 만들 때 BUILD_REVISION으로 넣고, /health에서 읽어 배포 결과를 대조한다
+BUILD_REVISION = os.environ.get('BUILD_REVISION', 'dev')
 
 # 최근 예측을 request_id로 찾아 피드백이 오면 바로 오차(reward)를 계산한다.
 # 서버 메모리에만 있으므로 재시작하면 사라진다. 그때는 로그에서 request_id로 이어 붙인다.
@@ -56,7 +60,8 @@ def index():
 def health():
     if state['model'] is None:
         return model_not_ready()
-    return {'status': 'ok', 'model_path': str(predict.MODEL_PATH), 'model_version': state['model_version']}
+    return {'status': 'ok', 'model_path': str(predict.MODEL_PATH), 'model_version': state['model_version'],
+            'build_revision': BUILD_REVISION}
 
 
 @app.post('/predict')
