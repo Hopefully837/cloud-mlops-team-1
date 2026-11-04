@@ -20,6 +20,10 @@ CASES = {
         ('피드백 모르는 id', 'POST', '/feedback', {'request_id': 'unknown-id', 'actual_rentals': 3000}),
         ('피드백 음수', 'POST', '/feedback', {'request_id': REQUEST_ID, 'actual_rentals': -5}),
         ('피드백 id 누락', 'POST', '/feedback', {'actual_rentals': 3000}),
+        # NaN은 비교 연산이 모두 False라 범위 검사를 통과할 수 있어 따로 확인한다
+        # (앞의 피드백이 끝난 뒤에 두어 정상 입력의 request_id를 덮어쓰지 않게 한다)
+        ('기온 NaN', 'POST', '/predict', {**NORMAL, 'temperature': float('nan')}),
+        ('시간 NaN', 'POST', '/predict', {**NORMAL, 'hour': float('nan')}),
     ],
     'model-missing': [  # 서버를 없는 모델 경로로 켠 상태에서 실행한다
         ('health', 'GET', '/health', None),
@@ -34,9 +38,17 @@ def send(base_url, method, path, body):
                                      headers={'Content-Type': 'application/json'})
     try:
         with urllib.request.urlopen(request) as response:
-            return response.status, json.loads(response.read())
+            return response.status, parse_body(response.read())
     except urllib.error.HTTPError as e:  # 4xx·5xx도 응답 본문을 그대로 기록한다
-        return e.code, json.loads(e.read())
+        return e.code, parse_body(e.read())
+
+
+def parse_body(raw):
+    """JSON이면 파싱하고, 500의 'Internal Server Error'처럼 JSON이 아니면 문자열 그대로 돌려준다."""
+    try:
+        return json.loads(raw)
+    except ValueError:
+        return raw.decode('utf-8', errors='replace')
 
 
 def main():
