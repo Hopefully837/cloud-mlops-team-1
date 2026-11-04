@@ -18,6 +18,8 @@
 | 실제값 돌려받기 | 그 시간이 지난 뒤 `/feedback`에 `request_id`와 실제 대여 수를 보내면 오차(`reward`)를 로그에 기록한다 |
 | 접속 | 웹 화면 `GET /`, API `POST /predict`·`POST /feedback`, 상태 `GET /health` (기본 8000번 포트) |
 
+배포 구성·절차·되돌리기: [`docs/deploy.md`](docs/deploy.md) (EC2 + Docker, GitHub Actions 또는 `scripts/deploy-aws-cli.sh`)
+
 ## 폴더 구조
 
 ```
