@@ -10,11 +10,11 @@ from pathlib import Path
 
 import joblib
 import mlflow
-import pandas as pd
 from sklearn.ensemble import HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
-from sklearn.model_selection import train_test_split
+
+from splits import SEED, TARGET, load, split  # 분할을 다른 도구(재학습·로그 전처리)와 똑같이 쓰기 위해 한 곳에 둔다
 
 WEATHER_TIME = ['Hour', 'Temperature(°C)', 'Humidity(%)', 'Rainfall(mm)']
 BASE = WEATHER_TIME + ['Holiday']
@@ -26,23 +26,10 @@ FEATURE_SETS = {  # 입력 비교 실험. 검증 MAE가 가장 낮은 조합을 
     # 공휴일(17일)을 주말과 합쳐 '쉬는 날'로 두면 공휴일이 주말 데이터를 빌려 배울 수 있다
     'offday+month+dow': WEATHER_TIME + ['is_offday', 'month', 'dow'],
 }
-TARGET = 'Rented Bike Count'
-SEED = 42  # 누가 실행해도 같은 분할·모델이 나오도록 고정
 
 
 def digest(path):  # 입력·모델 파일 동일성 확인용 SHA-256
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-
-
-def load(path):
-    df = pd.read_csv(path, encoding='utf-8')
-    date = pd.to_datetime(df['Date'], format='%d/%m/%Y')
-    df['is_weekend'] = (date.dt.dayofweek >= 5).astype(int)  # 토·일=1
-    df['month'] = date.dt.month  # 1~12
-    df['dow'] = date.dt.dayofweek  # 요일: 월=0 ~ 일=6
-    df['Holiday'] = (df['Holiday'] == 'Holiday').astype(int)  # Holiday=1, No Holiday=0
-    df['is_offday'] = (df['is_weekend'] | df['Holiday']).astype(int)  # 쉬는 날 = 주말 또는 공휴일
-    return df
 
 
 def make_models():  # 입력 조합마다 새 모델로 학습한다
@@ -62,10 +49,7 @@ def main():
     args = parser.parse_args()
 
     df = load(args.input)
-    # 1차: 평가용 20%를 먼저 떼어 둔다 → 2차: 나머지 80%를 학습 75% / 검증 25%로 나눈다
-    # 결과: 학습 60% / 검증 20% / 평가 20%
-    rest, test = train_test_split(df, test_size=0.2, random_state=SEED)
-    train, val = train_test_split(rest, test_size=0.25, random_state=SEED)
+    train, val, test = split(df)  # 학습 60% / 검증 20% / 평가 20% (src/splits.py)
 
     # 기준선: 모든 행에 학습용 평균을 답한다
     baseline_val_mae = mean_absolute_error(val[TARGET], [train[TARGET].mean()] * len(val))
