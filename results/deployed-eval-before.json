@@ -1,0 +1,3027 @@
+{
+  "label": "before",
+  "url": "http://43.201.14.227:8000",
+  "health": {
+    "status": "ok",
+    "model_path": "models/model.joblib",
+    "model_version": "d7a782f5853d",
+    "build_revision": "bef1076dd9185fe36669d6bb13975c46d48c9e45"
+  },
+  "rows": 500,
+  "seed": 7,
+  "mae": 84.96,
+  "within_10pct_share": 0.494,
+  "demo_input": {
+    "date": "2018-06-15",
+    "hour": 18,
+    "temperature": 25.0,
+    "humidity": 50,
+    "rainfall": 0.0,
+    "holiday": false
+  },
+  "demo_prediction": 3266,
+  "seconds": 17.8,
+  "note": "평가용(test) 행을 서비스 API로 보내 측정했다. 피드백은 보내지 않았다.",
+  "rows_detail": [
+    {
+      "date": "2018-06-14",
+      "hour": 16,
+      "actual": 1550,
+      "predicted": 1680
+    },
+    {
+      "date": "2018-10-12",
+      "hour": 3,
+      "actual": 225,
+      "predicted": 192
+    },
+    {
+      "date": "2018-08-28",
+      "hour": 21,
+      "actual": 122,
+      "predicted": 36
+    },
+    {
+      "date": "2018-06-18",
+      "hour": 16,
+      "actual": 1401,
+      "predicted": 1481
+    },
+    {
+      "date": "2018-08-09",
+      "hour": 9,
+      "actual": 977,
+      "predicted": 907
+    },
+    {
+      "date": "2018-01-11",
+      "hour": 13,
+      "actual": 178,
+      "predicted": 180
+    },
+    {
+      "date": "2018-06-09",
+      "hour": 19,
+      "actual": 1058,
+      "predicted": 2411
+    },
+    {
+      "date": "2018-10-25",
+      "hour": 8,
+      "actual": 2070,
+      "predicted": 2064
+    },
+    {
+      "date": "2018-10-25",
+      "hour": 14,
+      "actual": 1192,
+      "predicted": 1300
+    },
+    {
+      "date": "2018-04-24",
+      "hour": 6,
+      "actual": 262,
+      "predicted": 291
+    },
+    {
+      "date": "2018-08-13",
+      "hour": 8,
+      "actual": 1657,
+      "predicted": 1762
+    },
+    {
+      "date": "2018-08-08",
+      "hour": 15,
+      "actual": 687,
+      "predicted": 747
+    },
+    {
+      "date": "2018-04-16",
+      "hour": 4,
+      "actual": 75,
+      "predicted": 114
+    },
+    {
+      "date": "2018-02-20",
+      "hour": 10,
+      "actual": 265,
+      "predicted": 260
+    },
+    {
+      "date": "2018-08-27",
+      "hour": 1,
+      "actual": 61,
+      "predicted": 147
+    },
+    {
+      "date": "2017-12-29",
+      "hour": 10,
+      "actual": 252,
+      "predicted": 289
+    },
+    {
+      "date": "2018-11-28",
+      "hour": 2,
+      "actual": 275,
+      "predicted": 258
+    },
+    {
+      "date": "2018-03-28",
+      "hour": 12,
+      "actual": 629,
+      "predicted": 655
+    },
+    {
+      "date": "2018-10-24",
+      "hour": 18,
+      "actual": 2612,
+      "predicted": 2343
+    },
+    {
+      "date": "2018-11-23",
+      "hour": 7,
+      "actual": 727,
+      "predicted": 725
+    },
+    {
+      "date": "2018-08-24",
+      "hour": 9,
+      "actual": 484,
+      "predicted": 776
+    },
+    {
+      "date": "2018-04-22",
+      "hour": 8,
+      "actual": 429,
+      "predicted": 575
+    },
+    {
+      "date": "2018-07-22",
+      "hour": 4,
+      "actual": 270,
+      "predicted": 180
+    },
+    {
+      "date": "2018-08-18",
+      "hour": 0,
+      "actual": 1191,
+      "predicted": 1120
+    },
+    {
+      "date": "2018-07-25",
+      "hour": 18,
+      "actual": 2416,
+      "predicted": 2526
+    },
+    {
+      "date": "2018-11-10",
+      "hour": 17,
+      "actual": 1379,
+      "predicted": 1406
+    },
+    {
+      "date": "2018-08-08",
+      "hour": 3,
+      "actual": 322,
+      "predicted": 332
+    },
+    {
+      "date": "2018-07-07",
+      "hour": 19,
+      "actual": 2352,
+      "predicted": 2269
+    },
+    {
+      "date": "2017-12-22",
+      "hour": 7,
+      "actual": 283,
+      "predicted": 132
+    },
+    {
+      "date": "2018-03-24",
+      "hour": 16,
+      "actual": 947,
+      "predicted": 757
+    },
+    {
+      "date": "2018-01-13",
+      "hour": 21,
+      "actual": 156,
+      "predicted": 174
+    },
+    {
+      "date": "2018-05-04",
+      "hour": 20,
+      "actual": 1389,
+      "predicted": 1474
+    },
+    {
+      "date": "2018-06-18",
+      "hour": 15,
+      "actual": 1177,
+      "predicted": 1139
+    },
+    {
+      "date": "2018-07-02",
+      "hour": 13,
+      "actual": 304,
+      "predicted": 88
+    },
+    {
+      "date": "2018-01-15",
+      "hour": 23,
+      "actual": 230,
+      "predicted": 188
+    },
+    {
+      "date": "2018-03-04",
+      "hour": 14,
+      "actual": 475,
+      "predicted": 565
+    },
+    {
+      "date": "2018-07-28",
+      "hour": 12,
+      "actual": 632,
+      "predicted": 677
+    },
+    {
+      "date": "2017-12-09",
+      "hour": 19,
+      "actual": 275,
+      "predicted": 267
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 23,
+      "actual": 1298,
+      "predicted": 1292
+    },
+    {
+      "date": "2018-11-25",
+      "hour": 20,
+      "actual": 570,
+      "predicted": 597
+    },
+    {
+      "date": "2018-07-17",
+      "hour": 7,
+      "actual": 1356,
+      "predicted": 1335
+    },
+    {
+      "date": "2018-06-09",
+      "hour": 18,
+      "actual": 1934,
+      "predicted": 2366
+    },
+    {
+      "date": "2018-07-05",
+      "hour": 10,
+      "actual": 827,
+      "predicted": 852
+    },
+    {
+      "date": "2018-09-27",
+      "hour": 22,
+      "actual": 1801,
+      "predicted": 1549
+    },
+    {
+      "date": "2018-03-16",
+      "hour": 20,
+      "actual": 774,
+      "predicted": 599
+    },
+    {
+      "date": "2018-08-27",
+      "hour": 15,
+      "actual": 580,
+      "predicted": 436
+    },
+    {
+      "date": "2018-11-14",
+      "hour": 21,
+      "actual": 1239,
+      "predicted": 1224
+    },
+    {
+      "date": "2018-08-31",
+      "hour": 16,
+      "actual": 1404,
+      "predicted": 1386
+    },
+    {
+      "date": "2018-07-03",
+      "hour": 0,
+      "actual": 349,
+      "predicted": 160
+    },
+    {
+      "date": "2018-08-19",
+      "hour": 12,
+      "actual": 926,
+      "predicted": 880
+    },
+    {
+      "date": "2018-11-10",
+      "hour": 3,
+      "actual": 372,
+      "predicted": 308
+    },
+    {
+      "date": "2017-12-31",
+      "hour": 23,
+      "actual": 227,
+      "predicted": 136
+    },
+    {
+      "date": "2018-02-07",
+      "hour": 18,
+      "actual": 448,
+      "predicted": 471
+    },
+    {
+      "date": "2018-11-13",
+      "hour": 21,
+      "actual": 1163,
+      "predicted": 1037
+    },
+    {
+      "date": "2017-12-29",
+      "hour": 22,
+      "actual": 294,
+      "predicted": 295
+    },
+    {
+      "date": "2018-01-11",
+      "hour": 21,
+      "actual": 162,
+      "predicted": 201
+    },
+    {
+      "date": "2018-09-27",
+      "hour": 21,
+      "actual": 1930,
+      "predicted": 1735
+    },
+    {
+      "date": "2018-11-20",
+      "hour": 10,
+      "actual": 659,
+      "predicted": 670
+    },
+    {
+      "date": "2018-10-30",
+      "hour": 13,
+      "actual": 847,
+      "predicted": 887
+    },
+    {
+      "date": "2018-08-02",
+      "hour": 8,
+      "actual": 1579,
+      "predicted": 1466
+    },
+    {
+      "date": "2018-09-12",
+      "hour": 15,
+      "actual": 1251,
+      "predicted": 1250
+    },
+    {
+      "date": "2018-01-16",
+      "hour": 23,
+      "actual": 242,
+      "predicted": 212
+    },
+    {
+      "date": "2018-04-18",
+      "hour": 8,
+      "actual": 1815,
+      "predicted": 1502
+    },
+    {
+      "date": "2017-12-26",
+      "hour": 4,
+      "actual": 49,
+      "predicted": 38
+    },
+    {
+      "date": "2018-02-28",
+      "hour": 9,
+      "actual": 419,
+      "predicted": 443
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 7,
+      "actual": 303,
+      "predicted": 302
+    },
+    {
+      "date": "2018-06-18",
+      "hour": 3,
+      "actual": 202,
+      "predicted": 281
+    },
+    {
+      "date": "2017-12-05",
+      "hour": 11,
+      "actual": 334,
+      "predicted": 234
+    },
+    {
+      "date": "2018-09-12",
+      "hour": 20,
+      "actual": 2146,
+      "predicted": 2151
+    },
+    {
+      "date": "2018-08-20",
+      "hour": 23,
+      "actual": 1241,
+      "predicted": 1163
+    },
+    {
+      "date": "2018-07-14",
+      "hour": 19,
+      "actual": 1797,
+      "predicted": 1746
+    },
+    {
+      "date": "2017-12-15",
+      "hour": 13,
+      "actual": 325,
+      "predicted": 338
+    },
+    {
+      "date": "2018-06-27",
+      "hour": 10,
+      "actual": 862,
+      "predicted": 786
+    },
+    {
+      "date": "2018-11-25",
+      "hour": 13,
+      "actual": 675,
+      "predicted": 727
+    },
+    {
+      "date": "2018-04-04",
+      "hour": 15,
+      "actual": 1209,
+      "predicted": 1034
+    },
+    {
+      "date": "2018-01-29",
+      "hour": 22,
+      "actual": 172,
+      "predicted": 209
+    },
+    {
+      "date": "2018-09-09",
+      "hour": 22,
+      "actual": 1291,
+      "predicted": 1592
+    },
+    {
+      "date": "2018-08-28",
+      "hour": 22,
+      "actual": 64,
+      "predicted": 116
+    },
+    {
+      "date": "2018-01-22",
+      "hour": 11,
+      "actual": 277,
+      "predicted": 286
+    },
+    {
+      "date": "2018-02-25",
+      "hour": 3,
+      "actual": 103,
+      "predicted": 98
+    },
+    {
+      "date": "2018-05-19",
+      "hour": 21,
+      "actual": 1780,
+      "predicted": 1719
+    },
+    {
+      "date": "2018-02-13",
+      "hour": 14,
+      "actual": 300,
+      "predicted": 310
+    },
+    {
+      "date": "2017-12-20",
+      "hour": 9,
+      "actual": 239,
+      "predicted": 325
+    },
+    {
+      "date": "2018-03-30",
+      "hour": 6,
+      "actual": 284,
+      "predicted": 267
+    },
+    {
+      "date": "2018-09-07",
+      "hour": 3,
+      "actual": 259,
+      "predicted": 333
+    },
+    {
+      "date": "2018-06-21",
+      "hour": 20,
+      "actual": 2556,
+      "predicted": 2484
+    },
+    {
+      "date": "2018-07-18",
+      "hour": 10,
+      "actual": 722,
+      "predicted": 791
+    },
+    {
+      "date": "2018-09-23",
+      "hour": 3,
+      "actual": 334,
+      "predicted": 335
+    },
+    {
+      "date": "2018-03-03",
+      "hour": 0,
+      "actual": 218,
+      "predicted": 250
+    },
+    {
+      "date": "2017-12-01",
+      "hour": 17,
+      "actual": 555,
+      "predicted": 419
+    },
+    {
+      "date": "2018-02-04",
+      "hour": 15,
+      "actual": 190,
+      "predicted": 165
+    },
+    {
+      "date": "2017-12-26",
+      "hour": 18,
+      "actual": 481,
+      "predicted": 578
+    },
+    {
+      "date": "2018-01-14",
+      "hour": 1,
+      "actual": 150,
+      "predicted": 128
+    },
+    {
+      "date": "2018-02-03",
+      "hour": 23,
+      "actual": 91,
+      "predicted": 114
+    },
+    {
+      "date": "2018-08-22",
+      "hour": 9,
+      "actual": 1015,
+      "predicted": 942
+    },
+    {
+      "date": "2018-09-24",
+      "hour": 18,
+      "actual": 1237,
+      "predicted": 1727
+    },
+    {
+      "date": "2018-02-13",
+      "hour": 7,
+      "actual": 294,
+      "predicted": 270
+    },
+    {
+      "date": "2018-11-30",
+      "hour": 19,
+      "actual": 1003,
+      "predicted": 1063
+    },
+    {
+      "date": "2018-10-19",
+      "hour": 5,
+      "actual": 162,
+      "predicted": 156
+    },
+    {
+      "date": "2018-02-11",
+      "hour": 18,
+      "actual": 150,
+      "predicted": 78
+    },
+    {
+      "date": "2018-06-12",
+      "hour": 23,
+      "actual": 1657,
+      "predicted": 1212
+    },
+    {
+      "date": "2018-11-29",
+      "hour": 10,
+      "actual": 595,
+      "predicted": 631
+    },
+    {
+      "date": "2018-07-13",
+      "hour": 5,
+      "actual": 301,
+      "predicted": 323
+    },
+    {
+      "date": "2018-11-24",
+      "hour": 22,
+      "actual": 396,
+      "predicted": 382
+    },
+    {
+      "date": "2018-07-13",
+      "hour": 3,
+      "actual": 377,
+      "predicted": 303
+    },
+    {
+      "date": "2018-09-06",
+      "hour": 18,
+      "actual": 2497,
+      "predicted": 2822
+    },
+    {
+      "date": "2017-12-04",
+      "hour": 15,
+      "actual": 341,
+      "predicted": 332
+    },
+    {
+      "date": "2018-04-21",
+      "hour": 17,
+      "actual": 2032,
+      "predicted": 1957
+    },
+    {
+      "date": "2018-03-31",
+      "hour": 5,
+      "actual": 108,
+      "predicted": 155
+    },
+    {
+      "date": "2018-05-01",
+      "hour": 16,
+      "actual": 1759,
+      "predicted": 1792
+    },
+    {
+      "date": "2018-04-25",
+      "hour": 23,
+      "actual": 906,
+      "predicted": 942
+    },
+    {
+      "date": "2018-05-19",
+      "hour": 3,
+      "actual": 320,
+      "predicted": 350
+    },
+    {
+      "date": "2018-02-17",
+      "hour": 8,
+      "actual": 80,
+      "predicted": 91
+    },
+    {
+      "date": "2018-10-05",
+      "hour": 2,
+      "actual": 515,
+      "predicted": 479
+    },
+    {
+      "date": "2018-09-20",
+      "hour": 0,
+      "actual": 886,
+      "predicted": 981
+    },
+    {
+      "date": "2018-03-07",
+      "hour": 12,
+      "actual": 550,
+      "predicted": 533
+    },
+    {
+      "date": "2018-02-11",
+      "hour": 9,
+      "actual": 126,
+      "predicted": 122
+    },
+    {
+      "date": "2018-07-06",
+      "hour": 8,
+      "actual": 2273,
+      "predicted": 2063
+    },
+    {
+      "date": "2018-06-20",
+      "hour": 16,
+      "actual": 1600,
+      "predicted": 1580
+    },
+    {
+      "date": "2018-03-13",
+      "hour": 8,
+      "actual": 1215,
+      "predicted": 1091
+    },
+    {
+      "date": "2018-05-05",
+      "hour": 11,
+      "actual": 1024,
+      "predicted": 1156
+    },
+    {
+      "date": "2018-06-02",
+      "hour": 21,
+      "actual": 2238,
+      "predicted": 2043
+    },
+    {
+      "date": "2018-02-01",
+      "hour": 14,
+      "actual": 256,
+      "predicted": 257
+    },
+    {
+      "date": "2017-12-20",
+      "hour": 1,
+      "actual": 172,
+      "predicted": 148
+    },
+    {
+      "date": "2018-05-20",
+      "hour": 23,
+      "actual": 943,
+      "predicted": 992
+    },
+    {
+      "date": "2017-12-14",
+      "hour": 16,
+      "actual": 335,
+      "predicted": 317
+    },
+    {
+      "date": "2018-10-14",
+      "hour": 9,
+      "actual": 775,
+      "predicted": 676
+    },
+    {
+      "date": "2018-07-19",
+      "hour": 19,
+      "actual": 2245,
+      "predicted": 1988
+    },
+    {
+      "date": "2018-10-29",
+      "hour": 15,
+      "actual": 884,
+      "predicted": 900
+    },
+    {
+      "date": "2018-01-30",
+      "hour": 6,
+      "actual": 94,
+      "predicted": 95
+    },
+    {
+      "date": "2018-01-13",
+      "hour": 12,
+      "actual": 174,
+      "predicted": 153
+    },
+    {
+      "date": "2018-08-24",
+      "hour": 17,
+      "actual": 403,
+      "predicted": 555
+    },
+    {
+      "date": "2018-08-29",
+      "hour": 2,
+      "actual": 243,
+      "predicted": 309
+    },
+    {
+      "date": "2018-03-16",
+      "hour": 11,
+      "actual": 557,
+      "predicted": 559
+    },
+    {
+      "date": "2018-05-05",
+      "hour": 7,
+      "actual": 352,
+      "predicted": 499
+    },
+    {
+      "date": "2018-05-30",
+      "hour": 18,
+      "actual": 3251,
+      "predicted": 2920
+    },
+    {
+      "date": "2018-05-14",
+      "hour": 17,
+      "actual": 1891,
+      "predicted": 2169
+    },
+    {
+      "date": "2018-01-17",
+      "hour": 14,
+      "actual": 258,
+      "predicted": 350
+    },
+    {
+      "date": "2018-05-20",
+      "hour": 3,
+      "actual": 347,
+      "predicted": 324
+    },
+    {
+      "date": "2018-07-27",
+      "hour": 6,
+      "actual": 647,
+      "predicted": 635
+    },
+    {
+      "date": "2018-08-10",
+      "hour": 22,
+      "actual": 1544,
+      "predicted": 1540
+    },
+    {
+      "date": "2017-12-18",
+      "hour": 7,
+      "actual": 96,
+      "predicted": 307
+    },
+    {
+      "date": "2018-08-08",
+      "hour": 21,
+      "actual": 1783,
+      "predicted": 1757
+    },
+    {
+      "date": "2018-10-08",
+      "hour": 8,
+      "actual": 2005,
+      "predicted": 2029
+    },
+    {
+      "date": "2018-07-25",
+      "hour": 2,
+      "actual": 499,
+      "predicted": 523
+    },
+    {
+      "date": "2018-01-21",
+      "hour": 9,
+      "actual": 152,
+      "predicted": 172
+    },
+    {
+      "date": "2017-12-23",
+      "hour": 16,
+      "actual": 473,
+      "predicted": 536
+    },
+    {
+      "date": "2017-12-02",
+      "hour": 2,
+      "actual": 262,
+      "predicted": 201
+    },
+    {
+      "date": "2018-04-02",
+      "hour": 20,
+      "actual": 1517,
+      "predicted": 1647
+    },
+    {
+      "date": "2018-08-22",
+      "hour": 2,
+      "actual": 512,
+      "predicted": 440
+    },
+    {
+      "date": "2018-04-24",
+      "hour": 23,
+      "actual": 725,
+      "predicted": 632
+    },
+    {
+      "date": "2018-03-15",
+      "hour": 21,
+      "actual": 567,
+      "predicted": 175
+    },
+    {
+      "date": "2018-04-01",
+      "hour": 23,
+      "actual": 588,
+      "predicted": 725
+    },
+    {
+      "date": "2018-03-31",
+      "hour": 8,
+      "actual": 489,
+      "predicted": 659
+    },
+    {
+      "date": "2017-12-28",
+      "hour": 17,
+      "actual": 407,
+      "predicted": 371
+    },
+    {
+      "date": "2018-09-08",
+      "hour": 2,
+      "actual": 692,
+      "predicted": 697
+    },
+    {
+      "date": "2018-01-27",
+      "hour": 4,
+      "actual": 36,
+      "predicted": 29
+    },
+    {
+      "date": "2017-12-14",
+      "hour": 6,
+      "actual": 108,
+      "predicted": 135
+    },
+    {
+      "date": "2018-04-18",
+      "hour": 17,
+      "actual": 1738,
+      "predicted": 1658
+    },
+    {
+      "date": "2018-11-08",
+      "hour": 4,
+      "actual": 50,
+      "predicted": 50
+    },
+    {
+      "date": "2018-02-11",
+      "hour": 4,
+      "actual": 34,
+      "predicted": 35
+    },
+    {
+      "date": "2018-10-18",
+      "hour": 5,
+      "actual": 185,
+      "predicted": 226
+    },
+    {
+      "date": "2018-10-15",
+      "hour": 6,
+      "actual": 504,
+      "predicted": 513
+    },
+    {
+      "date": "2018-05-29",
+      "hour": 4,
+      "actual": 204,
+      "predicted": 309
+    },
+    {
+      "date": "2018-01-20",
+      "hour": 3,
+      "actual": 118,
+      "predicted": 129
+    },
+    {
+      "date": "2018-02-06",
+      "hour": 10,
+      "actual": 128,
+      "predicted": 148
+    },
+    {
+      "date": "2018-03-08",
+      "hour": 9,
+      "actual": 100,
+      "predicted": 164
+    },
+    {
+      "date": "2018-05-15",
+      "hour": 2,
+      "actual": 372,
+      "predicted": 385
+    },
+    {
+      "date": "2018-06-07",
+      "hour": 15,
+      "actual": 1171,
+      "predicted": 1301
+    },
+    {
+      "date": "2018-02-27",
+      "hour": 15,
+      "actual": 402,
+      "predicted": 322
+    },
+    {
+      "date": "2018-06-09",
+      "hour": 8,
+      "actual": 963,
+      "predicted": 992
+    },
+    {
+      "date": "2018-09-23",
+      "hour": 14,
+      "actual": 1136,
+      "predicted": 1531
+    },
+    {
+      "date": "2018-11-27",
+      "hour": 19,
+      "actual": 1023,
+      "predicted": 1427
+    },
+    {
+      "date": "2018-01-02",
+      "hour": 5,
+      "actual": 58,
+      "predicted": 51
+    },
+    {
+      "date": "2018-04-28",
+      "hour": 6,
+      "actual": 230,
+      "predicted": 190
+    },
+    {
+      "date": "2018-05-11",
+      "hour": 17,
+      "actual": 1863,
+      "predicted": 1880
+    },
+    {
+      "date": "2018-09-08",
+      "hour": 14,
+      "actual": 1554,
+      "predicted": 1679
+    },
+    {
+      "date": "2018-08-29",
+      "hour": 20,
+      "actual": 19,
+      "predicted": 76
+    },
+    {
+      "date": "2018-09-09",
+      "hour": 0,
+      "actual": 1185,
+      "predicted": 1111
+    },
+    {
+      "date": "2018-08-10",
+      "hour": 21,
+      "actual": 1641,
+      "predicted": 1657
+    },
+    {
+      "date": "2018-10-25",
+      "hour": 2,
+      "actual": 421,
+      "predicted": 367
+    },
+    {
+      "date": "2018-05-14",
+      "hour": 4,
+      "actual": 121,
+      "predicted": 82
+    },
+    {
+      "date": "2018-02-06",
+      "hour": 8,
+      "actual": 438,
+      "predicted": 422
+    },
+    {
+      "date": "2018-01-22",
+      "hour": 15,
+      "actual": 63,
+      "predicted": 242
+    },
+    {
+      "date": "2018-04-06",
+      "hour": 21,
+      "actual": 447,
+      "predicted": 564
+    },
+    {
+      "date": "2018-02-05",
+      "hour": 11,
+      "actual": 156,
+      "predicted": 164
+    },
+    {
+      "date": "2018-07-27",
+      "hour": 5,
+      "actual": 295,
+      "predicted": 259
+    },
+    {
+      "date": "2018-02-14",
+      "hour": 20,
+      "actual": 262,
+      "predicted": 375
+    },
+    {
+      "date": "2018-02-03",
+      "hour": 21,
+      "actual": 107,
+      "predicted": 110
+    },
+    {
+      "date": "2018-05-24",
+      "hour": 23,
+      "actual": 1087,
+      "predicted": 1187
+    },
+    {
+      "date": "2018-06-14",
+      "hour": 15,
+      "actual": 1292,
+      "predicted": 1413
+    },
+    {
+      "date": "2018-03-27",
+      "hour": 10,
+      "actual": 462,
+      "predicted": 583
+    },
+    {
+      "date": "2018-07-20",
+      "hour": 22,
+      "actual": 1782,
+      "predicted": 1830
+    },
+    {
+      "date": "2017-12-07",
+      "hour": 5,
+      "actual": 83,
+      "predicted": 85
+    },
+    {
+      "date": "2018-11-08",
+      "hour": 11,
+      "actual": 25,
+      "predicted": 0
+    },
+    {
+      "date": "2017-12-20",
+      "hour": 13,
+      "actual": 228,
+      "predicted": 276
+    },
+    {
+      "date": "2018-01-03",
+      "hour": 8,
+      "actual": 670,
+      "predicted": 519
+    },
+    {
+      "date": "2018-10-12",
+      "hour": 4,
+      "actual": 168,
+      "predicted": 133
+    },
+    {
+      "date": "2017-12-11",
+      "hour": 5,
+      "actual": 86,
+      "predicted": 77
+    },
+    {
+      "date": "2018-01-26",
+      "hour": 5,
+      "actual": 36,
+      "predicted": 12
+    },
+    {
+      "date": "2018-11-15",
+      "hour": 22,
+      "actual": 1061,
+      "predicted": 1080
+    },
+    {
+      "date": "2018-02-03",
+      "hour": 22,
+      "actual": 92,
+      "predicted": 140
+    },
+    {
+      "date": "2018-11-11",
+      "hour": 17,
+      "actual": 660,
+      "predicted": 828
+    },
+    {
+      "date": "2017-12-23",
+      "hour": 5,
+      "actual": 59,
+      "predicted": 92
+    },
+    {
+      "date": "2018-09-16",
+      "hour": 13,
+      "actual": 754,
+      "predicted": 1056
+    },
+    {
+      "date": "2017-12-02",
+      "hour": 9,
+      "actual": 328,
+      "predicted": 212
+    },
+    {
+      "date": "2018-06-11",
+      "hour": 10,
+      "actual": 992,
+      "predicted": 961
+    },
+    {
+      "date": "2018-06-02",
+      "hour": 2,
+      "actual": 677,
+      "predicted": 752
+    },
+    {
+      "date": "2018-10-03",
+      "hour": 4,
+      "actual": 284,
+      "predicted": 162
+    },
+    {
+      "date": "2018-04-10",
+      "hour": 23,
+      "actual": 212,
+      "predicted": 341
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 8,
+      "actual": 827,
+      "predicted": 1172
+    },
+    {
+      "date": "2018-10-12",
+      "hour": 13,
+      "actual": 1110,
+      "predicted": 1050
+    },
+    {
+      "date": "2018-05-27",
+      "hour": 23,
+      "actual": 1071,
+      "predicted": 1115
+    },
+    {
+      "date": "2018-10-05",
+      "hour": 17,
+      "actual": 66,
+      "predicted": 93
+    },
+    {
+      "date": "2018-06-03",
+      "hour": 4,
+      "actual": 294,
+      "predicted": 174
+    },
+    {
+      "date": "2018-05-25",
+      "hour": 6,
+      "actual": 531,
+      "predicted": 522
+    },
+    {
+      "date": "2017-12-01",
+      "hour": 8,
+      "actual": 930,
+      "predicted": 752
+    },
+    {
+      "date": "2017-12-27",
+      "hour": 17,
+      "actual": 314,
+      "predicted": 335
+    },
+    {
+      "date": "2018-03-23",
+      "hour": 4,
+      "actual": 92,
+      "predicted": 73
+    },
+    {
+      "date": "2018-10-28",
+      "hour": 13,
+      "actual": 916,
+      "predicted": 717
+    },
+    {
+      "date": "2018-03-09",
+      "hour": 6,
+      "actual": 195,
+      "predicted": 204
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 6,
+      "actual": 187,
+      "predicted": 238
+    },
+    {
+      "date": "2017-12-21",
+      "hour": 16,
+      "actual": 301,
+      "predicted": 398
+    },
+    {
+      "date": "2018-02-21",
+      "hour": 3,
+      "actual": 59,
+      "predicted": 87
+    },
+    {
+      "date": "2017-12-03",
+      "hour": 3,
+      "actual": 117,
+      "predicted": 0
+    },
+    {
+      "date": "2018-05-14",
+      "hour": 15,
+      "actual": 1171,
+      "predicted": 1357
+    },
+    {
+      "date": "2018-05-29",
+      "hour": 20,
+      "actual": 422,
+      "predicted": 351
+    },
+    {
+      "date": "2018-06-02",
+      "hour": 8,
+      "actual": 898,
+      "predicted": 978
+    },
+    {
+      "date": "2018-03-12",
+      "hour": 17,
+      "actual": 931,
+      "predicted": 1193
+    },
+    {
+      "date": "2017-12-12",
+      "hour": 1,
+      "actual": 127,
+      "predicted": 147
+    },
+    {
+      "date": "2018-02-16",
+      "hour": 10,
+      "actual": 78,
+      "predicted": 170
+    },
+    {
+      "date": "2017-12-01",
+      "hour": 19,
+      "actual": 600,
+      "predicted": 361
+    },
+    {
+      "date": "2018-01-17",
+      "hour": 0,
+      "actual": 204,
+      "predicted": 231
+    },
+    {
+      "date": "2017-12-23",
+      "hour": 6,
+      "actual": 63,
+      "predicted": 89
+    },
+    {
+      "date": "2018-03-19",
+      "hour": 6,
+      "actual": 91,
+      "predicted": 110
+    },
+    {
+      "date": "2018-09-03",
+      "hour": 2,
+      "actual": 321,
+      "predicted": 348
+    },
+    {
+      "date": "2018-11-12",
+      "hour": 17,
+      "actual": 1472,
+      "predicted": 1481
+    },
+    {
+      "date": "2018-09-11",
+      "hour": 21,
+      "actual": 2018,
+      "predicted": 2034
+    },
+    {
+      "date": "2018-01-01",
+      "hour": 19,
+      "actual": 125,
+      "predicted": 218
+    },
+    {
+      "date": "2018-07-08",
+      "hour": 22,
+      "actual": 1717,
+      "predicted": 1777
+    },
+    {
+      "date": "2017-12-10",
+      "hour": 1,
+      "actual": 280,
+      "predicted": 267
+    },
+    {
+      "date": "2018-02-20",
+      "hour": 13,
+      "actual": 370,
+      "predicted": 352
+    },
+    {
+      "date": "2018-10-19",
+      "hour": 14,
+      "actual": 1221,
+      "predicted": 1287
+    },
+    {
+      "date": "2018-02-01",
+      "hour": 21,
+      "actual": 257,
+      "predicted": 308
+    },
+    {
+      "date": "2018-06-02",
+      "hour": 20,
+      "actual": 2338,
+      "predicted": 2295
+    },
+    {
+      "date": "2018-05-20",
+      "hour": 16,
+      "actual": 2143,
+      "predicted": 2262
+    },
+    {
+      "date": "2018-11-17",
+      "hour": 22,
+      "actual": 655,
+      "predicted": 584
+    },
+    {
+      "date": "2018-04-23",
+      "hour": 16,
+      "actual": 41,
+      "predicted": 48
+    },
+    {
+      "date": "2017-12-27",
+      "hour": 18,
+      "actual": 466,
+      "predicted": 548
+    },
+    {
+      "date": "2018-09-01",
+      "hour": 2,
+      "actual": 785,
+      "predicted": 664
+    },
+    {
+      "date": "2018-06-05",
+      "hour": 13,
+      "actual": 1058,
+      "predicted": 1080
+    },
+    {
+      "date": "2018-08-08",
+      "hour": 5,
+      "actual": 260,
+      "predicted": 287
+    },
+    {
+      "date": "2018-02-18",
+      "hour": 1,
+      "actual": 103,
+      "predicted": 96
+    },
+    {
+      "date": "2018-08-06",
+      "hour": 16,
+      "actual": 752,
+      "predicted": 790
+    },
+    {
+      "date": "2018-08-29",
+      "hour": 6,
+      "actual": 346,
+      "predicted": 571
+    },
+    {
+      "date": "2018-10-20",
+      "hour": 3,
+      "actual": 386,
+      "predicted": 379
+    },
+    {
+      "date": "2018-10-07",
+      "hour": 22,
+      "actual": 1160,
+      "predicted": 1112
+    },
+    {
+      "date": "2018-01-31",
+      "hour": 15,
+      "actual": 214,
+      "predicted": 253
+    },
+    {
+      "date": "2018-06-20",
+      "hour": 22,
+      "actual": 1979,
+      "predicted": 2037
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 9,
+      "actual": 634,
+      "predicted": 767
+    },
+    {
+      "date": "2018-05-24",
+      "hour": 10,
+      "actual": 880,
+      "predicted": 903
+    },
+    {
+      "date": "2018-05-11",
+      "hour": 11,
+      "actual": 972,
+      "predicted": 960
+    },
+    {
+      "date": "2018-01-19",
+      "hour": 21,
+      "actual": 331,
+      "predicted": 308
+    },
+    {
+      "date": "2018-02-10",
+      "hour": 16,
+      "actual": 291,
+      "predicted": 279
+    },
+    {
+      "date": "2018-07-05",
+      "hour": 22,
+      "actual": 1941,
+      "predicted": 1937
+    },
+    {
+      "date": "2018-08-20",
+      "hour": 16,
+      "actual": 1253,
+      "predicted": 1254
+    },
+    {
+      "date": "2018-07-12",
+      "hour": 23,
+      "actual": 1355,
+      "predicted": 1202
+    },
+    {
+      "date": "2018-08-29",
+      "hour": 5,
+      "actual": 109,
+      "predicted": 138
+    },
+    {
+      "date": "2018-08-05",
+      "hour": 12,
+      "actual": 565,
+      "predicted": 639
+    },
+    {
+      "date": "2017-12-31",
+      "hour": 17,
+      "actual": 240,
+      "predicted": 280
+    },
+    {
+      "date": "2018-08-22",
+      "hour": 0,
+      "actual": 1025,
+      "predicted": 893
+    },
+    {
+      "date": "2018-08-11",
+      "hour": 15,
+      "actual": 694,
+      "predicted": 832
+    },
+    {
+      "date": "2018-10-07",
+      "hour": 8,
+      "actual": 589,
+      "predicted": 562
+    },
+    {
+      "date": "2018-04-18",
+      "hour": 1,
+      "actual": 375,
+      "predicted": 366
+    },
+    {
+      "date": "2018-04-05",
+      "hour": 2,
+      "actual": 220,
+      "predicted": 264
+    },
+    {
+      "date": "2018-09-25",
+      "hour": 14,
+      "actual": 1522,
+      "predicted": 1547
+    },
+    {
+      "date": "2018-05-29",
+      "hour": 9,
+      "actual": 1192,
+      "predicted": 1121
+    },
+    {
+      "date": "2018-09-15",
+      "hour": 12,
+      "actual": 1284,
+      "predicted": 1270
+    },
+    {
+      "date": "2018-01-28",
+      "hour": 22,
+      "actual": 105,
+      "predicted": 102
+    },
+    {
+      "date": "2018-03-25",
+      "hour": 19,
+      "actual": 571,
+      "predicted": 413
+    },
+    {
+      "date": "2018-03-26",
+      "hour": 17,
+      "actual": 925,
+      "predicted": 1362
+    },
+    {
+      "date": "2018-04-22",
+      "hour": 21,
+      "actual": 24,
+      "predicted": 361
+    },
+    {
+      "date": "2018-08-14",
+      "hour": 8,
+      "actual": 1708,
+      "predicted": 1732
+    },
+    {
+      "date": "2018-07-30",
+      "hour": 10,
+      "actual": 609,
+      "predicted": 573
+    },
+    {
+      "date": "2018-04-28",
+      "hour": 20,
+      "actual": 1435,
+      "predicted": 1257
+    },
+    {
+      "date": "2018-09-11",
+      "hour": 4,
+      "actual": 193,
+      "predicted": 179
+    },
+    {
+      "date": "2018-08-22",
+      "hour": 14,
+      "actual": 760,
+      "predicted": 601
+    },
+    {
+      "date": "2018-08-24",
+      "hour": 5,
+      "actual": 45,
+      "predicted": 39
+    },
+    {
+      "date": "2018-09-04",
+      "hour": 12,
+      "actual": 995,
+      "predicted": 1033
+    },
+    {
+      "date": "2018-09-02",
+      "hour": 15,
+      "actual": 1550,
+      "predicted": 1528
+    },
+    {
+      "date": "2018-04-25",
+      "hour": 13,
+      "actual": 1141,
+      "predicted": 1028
+    },
+    {
+      "date": "2018-07-29",
+      "hour": 14,
+      "actual": 630,
+      "predicted": 634
+    },
+    {
+      "date": "2018-11-24",
+      "hour": 6,
+      "actual": 79,
+      "predicted": 155
+    },
+    {
+      "date": "2018-09-11",
+      "hour": 20,
+      "actual": 2072,
+      "predicted": 2116
+    },
+    {
+      "date": "2018-01-13",
+      "hour": 2,
+      "actual": 145,
+      "predicted": 106
+    },
+    {
+      "date": "2018-05-02",
+      "hour": 0,
+      "actual": 612,
+      "predicted": 869
+    },
+    {
+      "date": "2018-04-08",
+      "hour": 22,
+      "actual": 177,
+      "predicted": 247
+    },
+    {
+      "date": "2018-05-26",
+      "hour": 9,
+      "actual": 992,
+      "predicted": 988
+    },
+    {
+      "date": "2018-06-01",
+      "hour": 7,
+      "actual": 1421,
+      "predicted": 1128
+    },
+    {
+      "date": "2018-07-31",
+      "hour": 19,
+      "actual": 1865,
+      "predicted": 1832
+    },
+    {
+      "date": "2018-10-01",
+      "hour": 15,
+      "actual": 1258,
+      "predicted": 1275
+    },
+    {
+      "date": "2018-10-29",
+      "hour": 4,
+      "actual": 117,
+      "predicted": 158
+    },
+    {
+      "date": "2018-06-11",
+      "hour": 3,
+      "actual": 232,
+      "predicted": 258
+    },
+    {
+      "date": "2018-04-23",
+      "hour": 20,
+      "actual": 37,
+      "predicted": 55
+    },
+    {
+      "date": "2018-05-03",
+      "hour": 20,
+      "actual": 1401,
+      "predicted": 1444
+    },
+    {
+      "date": "2018-11-14",
+      "hour": 15,
+      "actual": 1063,
+      "predicted": 1023
+    },
+    {
+      "date": "2018-07-02",
+      "hour": 2,
+      "actual": 17,
+      "predicted": 0
+    },
+    {
+      "date": "2018-05-23",
+      "hour": 17,
+      "actual": 2069,
+      "predicted": 2011
+    },
+    {
+      "date": "2018-08-25",
+      "hour": 20,
+      "actual": 2022,
+      "predicted": 1947
+    },
+    {
+      "date": "2018-09-29",
+      "hour": 10,
+      "actual": 1071,
+      "predicted": 878
+    },
+    {
+      "date": "2018-08-08",
+      "hour": 7,
+      "actual": 1079,
+      "predicted": 1004
+    },
+    {
+      "date": "2018-05-01",
+      "hour": 14,
+      "actual": 1536,
+      "predicted": 1569
+    },
+    {
+      "date": "2018-05-08",
+      "hour": 9,
+      "actual": 1128,
+      "predicted": 1229
+    },
+    {
+      "date": "2018-11-23",
+      "hour": 20,
+      "actual": 767,
+      "predicted": 732
+    },
+    {
+      "date": "2018-09-01",
+      "hour": 21,
+      "actual": 1110,
+      "predicted": 1883
+    },
+    {
+      "date": "2018-08-12",
+      "hour": 3,
+      "actual": 387,
+      "predicted": 381
+    },
+    {
+      "date": "2018-03-19",
+      "hour": 10,
+      "actual": 292,
+      "predicted": 394
+    },
+    {
+      "date": "2018-06-19",
+      "hour": 9,
+      "actual": 1381,
+      "predicted": 1283
+    },
+    {
+      "date": "2018-05-29",
+      "hour": 0,
+      "actual": 841,
+      "predicted": 922
+    },
+    {
+      "date": "2018-09-06",
+      "hour": 12,
+      "actual": 1041,
+      "predicted": 969
+    },
+    {
+      "date": "2018-08-21",
+      "hour": 10,
+      "actual": 402,
+      "predicted": 628
+    },
+    {
+      "date": "2018-01-15",
+      "hour": 4,
+      "actual": 38,
+      "predicted": 67
+    },
+    {
+      "date": "2018-01-24",
+      "hour": 19,
+      "actual": 211,
+      "predicted": 199
+    },
+    {
+      "date": "2018-06-08",
+      "hour": 3,
+      "actual": 365,
+      "predicted": 365
+    },
+    {
+      "date": "2018-01-25",
+      "hour": 10,
+      "actual": 105,
+      "predicted": 110
+    },
+    {
+      "date": "2018-08-25",
+      "hour": 12,
+      "actual": 1070,
+      "predicted": 1138
+    },
+    {
+      "date": "2018-11-26",
+      "hour": 11,
+      "actual": 643,
+      "predicted": 656
+    },
+    {
+      "date": "2017-12-24",
+      "hour": 2,
+      "actual": 196,
+      "predicted": 194
+    },
+    {
+      "date": "2018-07-17",
+      "hour": 0,
+      "actual": 1003,
+      "predicted": 961
+    },
+    {
+      "date": "2018-05-08",
+      "hour": 4,
+      "actual": 155,
+      "predicted": 169
+    },
+    {
+      "date": "2018-04-22",
+      "hour": 9,
+      "actual": 247,
+      "predicted": 688
+    },
+    {
+      "date": "2018-11-17",
+      "hour": 0,
+      "actual": 626,
+      "predicted": 577
+    },
+    {
+      "date": "2018-07-18",
+      "hour": 7,
+      "actual": 1308,
+      "predicted": 1346
+    },
+    {
+      "date": "2018-05-15",
+      "hour": 15,
+      "actual": 1210,
+      "predicted": 1277
+    },
+    {
+      "date": "2017-12-03",
+      "hour": 13,
+      "actual": 495,
+      "predicted": 258
+    },
+    {
+      "date": "2018-03-05",
+      "hour": 19,
+      "actual": 782,
+      "predicted": 692
+    },
+    {
+      "date": "2018-02-07",
+      "hour": 11,
+      "actual": 176,
+      "predicted": 177
+    },
+    {
+      "date": "2018-09-07",
+      "hour": 7,
+      "actual": 1346,
+      "predicted": 1268
+    },
+    {
+      "date": "2017-12-20",
+      "hour": 20,
+      "actual": 165,
+      "predicted": 269
+    },
+    {
+      "date": "2018-03-25",
+      "hour": 18,
+      "actual": 768,
+      "predicted": 934
+    },
+    {
+      "date": "2018-04-07",
+      "hour": 17,
+      "actual": 908,
+      "predicted": 864
+    },
+    {
+      "date": "2018-02-06",
+      "hour": 15,
+      "actual": 171,
+      "predicted": 191
+    },
+    {
+      "date": "2018-07-13",
+      "hour": 11,
+      "actual": 887,
+      "predicted": 863
+    },
+    {
+      "date": "2018-03-15",
+      "hour": 19,
+      "actual": 606,
+      "predicted": 114
+    },
+    {
+      "date": "2018-01-12",
+      "hour": 14,
+      "actual": 173,
+      "predicted": 191
+    },
+    {
+      "date": "2018-08-03",
+      "hour": 12,
+      "actual": 585,
+      "predicted": 570
+    },
+    {
+      "date": "2018-08-06",
+      "hour": 14,
+      "actual": 571,
+      "predicted": 624
+    },
+    {
+      "date": "2018-09-02",
+      "hour": 4,
+      "actual": 255,
+      "predicted": 270
+    },
+    {
+      "date": "2018-09-27",
+      "hour": 19,
+      "actual": 2422,
+      "predicted": 2186
+    },
+    {
+      "date": "2018-06-17",
+      "hour": 17,
+      "actual": 2330,
+      "predicted": 2206
+    },
+    {
+      "date": "2018-10-19",
+      "hour": 15,
+      "actual": 1390,
+      "predicted": 1402
+    },
+    {
+      "date": "2018-06-17",
+      "hour": 9,
+      "actual": 944,
+      "predicted": 836
+    },
+    {
+      "date": "2018-05-06",
+      "hour": 3,
+      "actual": 43,
+      "predicted": 77
+    },
+    {
+      "date": "2018-01-01",
+      "hour": 8,
+      "actual": 89,
+      "predicted": 172
+    },
+    {
+      "date": "2018-08-17",
+      "hour": 6,
+      "actual": 719,
+      "predicted": 583
+    },
+    {
+      "date": "2018-10-28",
+      "hour": 22,
+      "actual": 625,
+      "predicted": 566
+    },
+    {
+      "date": "2018-03-22",
+      "hour": 20,
+      "actual": 739,
+      "predicted": 622
+    },
+    {
+      "date": "2018-04-14",
+      "hour": 17,
+      "actual": 675,
+      "predicted": 493
+    },
+    {
+      "date": "2018-07-14",
+      "hour": 16,
+      "actual": 1177,
+      "predicted": 1397
+    },
+    {
+      "date": "2018-06-17",
+      "hour": 19,
+      "actual": 2481,
+      "predicted": 2412
+    },
+    {
+      "date": "2018-03-14",
+      "hour": 11,
+      "actual": 643,
+      "predicted": 621
+    },
+    {
+      "date": "2018-10-16",
+      "hour": 16,
+      "actual": 1407,
+      "predicted": 1437
+    },
+    {
+      "date": "2017-12-07",
+      "hour": 13,
+      "actual": 394,
+      "predicted": 359
+    },
+    {
+      "date": "2018-06-15",
+      "hour": 2,
+      "actual": 403,
+      "predicted": 298
+    },
+    {
+      "date": "2018-01-05",
+      "hour": 18,
+      "actual": 635,
+      "predicted": 564
+    },
+    {
+      "date": "2018-10-06",
+      "hour": 7,
+      "actual": 5,
+      "predicted": 0
+    },
+    {
+      "date": "2018-07-29",
+      "hour": 2,
+      "actual": 511,
+      "predicted": 564
+    },
+    {
+      "date": "2018-02-24",
+      "hour": 23,
+      "actual": 187,
+      "predicted": 170
+    },
+    {
+      "date": "2017-12-14",
+      "hour": 14,
+      "actual": 294,
+      "predicted": 285
+    },
+    {
+      "date": "2018-02-08",
+      "hour": 9,
+      "actual": 270,
+      "predicted": 266
+    },
+    {
+      "date": "2018-02-22",
+      "hour": 10,
+      "actual": 259,
+      "predicted": 263
+    },
+    {
+      "date": "2018-06-30",
+      "hour": 12,
+      "actual": 858,
+      "predicted": 251
+    },
+    {
+      "date": "2018-01-06",
+      "hour": 2,
+      "actual": 176,
+      "predicted": 128
+    },
+    {
+      "date": "2018-03-02",
+      "hour": 5,
+      "actual": 65,
+      "predicted": 55
+    },
+    {
+      "date": "2018-04-05",
+      "hour": 17,
+      "actual": 46,
+      "predicted": 65
+    },
+    {
+      "date": "2018-09-24",
+      "hour": 0,
+      "actual": 620,
+      "predicted": 747
+    },
+    {
+      "date": "2018-02-09",
+      "hour": 11,
+      "actual": 238,
+      "predicted": 245
+    },
+    {
+      "date": "2018-04-09",
+      "hour": 10,
+      "actual": 506,
+      "predicted": 423
+    },
+    {
+      "date": "2017-12-30",
+      "hour": 14,
+      "actual": 356,
+      "predicted": 367
+    },
+    {
+      "date": "2018-06-24",
+      "hour": 22,
+      "actual": 1801,
+      "predicted": 1689
+    },
+    {
+      "date": "2018-01-14",
+      "hour": 0,
+      "actual": 149,
+      "predicted": 141
+    },
+    {
+      "date": "2018-04-12",
+      "hour": 15,
+      "actual": 1074,
+      "predicted": 1144
+    },
+    {
+      "date": "2018-05-03",
+      "hour": 12,
+      "actual": 871,
+      "predicted": 994
+    },
+    {
+      "date": "2018-09-24",
+      "hour": 19,
+      "actual": 1280,
+      "predicted": 1559
+    },
+    {
+      "date": "2018-08-13",
+      "hour": 11,
+      "actual": 677,
+      "predicted": 679
+    },
+    {
+      "date": "2018-07-12",
+      "hour": 5,
+      "actual": 231,
+      "predicted": 225
+    },
+    {
+      "date": "2018-02-16",
+      "hour": 22,
+      "actual": 116,
+      "predicted": 119
+    },
+    {
+      "date": "2018-11-21",
+      "hour": 2,
+      "actual": 129,
+      "predicted": 184
+    },
+    {
+      "date": "2018-10-01",
+      "hour": 17,
+      "actual": 1799,
+      "predicted": 1778
+    },
+    {
+      "date": "2018-01-14",
+      "hour": 22,
+      "actual": 196,
+      "predicted": 188
+    },
+    {
+      "date": "2018-06-24",
+      "hour": 13,
+      "actual": 1062,
+      "predicted": 1198
+    },
+    {
+      "date": "2018-07-03",
+      "hour": 15,
+      "actual": 1069,
+      "predicted": 871
+    },
+    {
+      "date": "2018-06-29",
+      "hour": 22,
+      "actual": 2103,
+      "predicted": 1943
+    },
+    {
+      "date": "2018-10-27",
+      "hour": 5,
+      "actual": 146,
+      "predicted": 242
+    },
+    {
+      "date": "2018-09-16",
+      "hour": 1,
+      "actual": 764,
+      "predicted": 838
+    },
+    {
+      "date": "2018-07-04",
+      "hour": 17,
+      "actual": 1856,
+      "predicted": 1796
+    },
+    {
+      "date": "2018-02-04",
+      "hour": 6,
+      "actual": 23,
+      "predicted": 16
+    },
+    {
+      "date": "2018-04-09",
+      "hour": 18,
+      "actual": 2401,
+      "predicted": 2016
+    },
+    {
+      "date": "2018-11-28",
+      "hour": 22,
+      "actual": 804,
+      "predicted": 683
+    },
+    {
+      "date": "2018-04-03",
+      "hour": 3,
+      "actual": 156,
+      "predicted": 180
+    },
+    {
+      "date": "2018-10-26",
+      "hour": 15,
+      "actual": 576,
+      "predicted": 234
+    },
+    {
+      "date": "2017-12-08",
+      "hour": 1,
+      "actual": 230,
+      "predicted": 238
+    },
+    {
+      "date": "2018-08-13",
+      "hour": 0,
+      "actual": 409,
+      "predicted": 705
+    },
+    {
+      "date": "2018-08-29",
+      "hour": 8,
+      "actual": 1595,
+      "predicted": 1775
+    },
+    {
+      "date": "2018-05-16",
+      "hour": 3,
+      "actual": 166,
+      "predicted": 45
+    },
+    {
+      "date": "2018-02-20",
+      "hour": 8,
+      "actual": 727,
+      "predicted": 621
+    },
+    {
+      "date": "2018-02-27",
+      "hour": 21,
+      "actual": 449,
+      "predicted": 461
+    },
+    {
+      "date": "2018-08-04",
+      "hour": 7,
+      "actual": 405,
+      "predicted": 513
+    },
+    {
+      "date": "2018-05-03",
+      "hour": 5,
+      "actual": 163,
+      "predicted": 118
+    },
+    {
+      "date": "2018-11-28",
+      "hour": 7,
+      "actual": 796,
+      "predicted": 942
+    },
+    {
+      "date": "2018-07-02",
+      "hour": 11,
+      "actual": 153,
+      "predicted": 34
+    },
+    {
+      "date": "2018-09-11",
+      "hour": 22,
+      "actual": 1868,
+      "predicted": 1842
+    },
+    {
+      "date": "2018-01-13",
+      "hour": 10,
+      "actual": 106,
+      "predicted": 143
+    },
+    {
+      "date": "2018-11-17",
+      "hour": 14,
+      "actual": 969,
+      "predicted": 1015
+    },
+    {
+      "date": "2018-11-28",
+      "hour": 6,
+      "actual": 287,
+      "predicted": 415
+    },
+    {
+      "date": "2018-01-12",
+      "hour": 10,
+      "actual": 119,
+      "predicted": 135
+    },
+    {
+      "date": "2018-05-31",
+      "hour": 20,
+      "actual": 2164,
+      "predicted": 2055
+    },
+    {
+      "date": "2018-11-25",
+      "hour": 23,
+      "actual": 379,
+      "predicted": 430
+    },
+    {
+      "date": "2018-02-23",
+      "hour": 13,
+      "actual": 304,
+      "predicted": 358
+    },
+    {
+      "date": "2018-06-12",
+      "hour": 20,
+      "actual": 2579,
+      "predicted": 2439
+    },
+    {
+      "date": "2017-12-20",
+      "hour": 12,
+      "actual": 209,
+      "predicted": 262
+    },
+    {
+      "date": "2018-07-25",
+      "hour": 13,
+      "actual": 783,
+      "predicted": 807
+    },
+    {
+      "date": "2018-11-24",
+      "hour": 19,
+      "actual": 420,
+      "predicted": 373
+    },
+    {
+      "date": "2018-01-01",
+      "hour": 4,
+      "actual": 62,
+      "predicted": 67
+    },
+    {
+      "date": "2018-11-07",
+      "hour": 5,
+      "actual": 71,
+      "predicted": 42
+    },
+    {
+      "date": "2018-06-17",
+      "hour": 2,
+      "actual": 755,
+      "predicted": 591
+    },
+    {
+      "date": "2018-08-03",
+      "hour": 7,
+      "actual": 937,
+      "predicted": 849
+    },
+    {
+      "date": "2017-12-21",
+      "hour": 20,
+      "actual": 288,
+      "predicted": 267
+    },
+    {
+      "date": "2018-08-15",
+      "hour": 20,
+      "actual": 1500,
+      "predicted": 1857
+    },
+    {
+      "date": "2018-03-31",
+      "hour": 14,
+      "actual": 1381,
+      "predicted": 1364
+    },
+    {
+      "date": "2018-10-16",
+      "hour": 13,
+      "actual": 1108,
+      "predicted": 1150
+    },
+    {
+      "date": "2018-07-06",
+      "hour": 21,
+      "actual": 2183,
+      "predicted": 2214
+    },
+    {
+      "date": "2018-08-12",
+      "hour": 10,
+      "actual": 483,
+      "predicted": 560
+    },
+    {
+      "date": "2018-10-29",
+      "hour": 12,
+      "actual": 737,
+      "predicted": 857
+    },
+    {
+      "date": "2018-11-19",
+      "hour": 10,
+      "actual": 651,
+      "predicted": 665
+    },
+    {
+      "date": "2018-10-08",
+      "hour": 15,
+      "actual": 1502,
+      "predicted": 1324
+    },
+    {
+      "date": "2018-03-01",
+      "hour": 17,
+      "actual": 423,
+      "predicted": 376
+    },
+    {
+      "date": "2018-04-10",
+      "hour": 5,
+      "actual": 123,
+      "predicted": 167
+    },
+    {
+      "date": "2018-09-06",
+      "hour": 5,
+      "actual": 247,
+      "predicted": 253
+    },
+    {
+      "date": "2018-02-16",
+      "hour": 2,
+      "actual": 47,
+      "predicted": 107
+    },
+    {
+      "date": "2018-09-26",
+      "hour": 11,
+      "actual": 1152,
+      "predicted": 1013
+    },
+    {
+      "date": "2018-04-07",
+      "hour": 23,
+      "actual": 368,
+      "predicted": 303
+    },
+    {
+      "date": "2018-08-12",
+      "hour": 2,
+      "actual": 554,
+      "predicted": 581
+    },
+    {
+      "date": "2018-03-27",
+      "hour": 23,
+      "actual": 527,
+      "predicted": 567
+    },
+    {
+      "date": "2018-01-12",
+      "hour": 1,
+      "actual": 99,
+      "predicted": 94
+    },
+    {
+      "date": "2018-05-25",
+      "hour": 8,
+      "actual": 1996,
+      "predicted": 1633
+    },
+    {
+      "date": "2018-11-14",
+      "hour": 23,
+      "actual": 757,
+      "predicted": 696
+    },
+    {
+      "date": "2018-05-31",
+      "hour": 11,
+      "actual": 979,
+      "predicted": 1058
+    },
+    {
+      "date": "2018-01-25",
+      "hour": 8,
+      "actual": 349,
+      "predicted": 335
+    },
+    {
+      "date": "2018-01-05",
+      "hour": 12,
+      "actual": 362,
+      "predicted": 285
+    },
+    {
+      "date": "2018-02-12",
+      "hour": 13,
+      "actual": 246,
+      "predicted": 223
+    },
+    {
+      "date": "2018-01-16",
+      "hour": 4,
+      "actual": 51,
+      "predicted": 59
+    },
+    {
+      "date": "2018-10-29",
+      "hour": 18,
+      "actual": 1987,
+      "predicted": 2087
+    },
+    {
+      "date": "2018-10-23",
+      "hour": 18,
+      "actual": 2415,
+      "predicted": 1832
+    },
+    {
+      "date": "2018-09-15",
+      "hour": 9,
+      "actual": 934,
+      "predicted": 834
+    },
+    {
+      "date": "2018-05-11",
+      "hour": 22,
+      "actual": 1556,
+      "predicted": 1462
+    },
+    {
+      "date": "2018-01-13",
+      "hour": 23,
+      "actual": 131,
+      "predicted": 132
+    },
+    {
+      "date": "2018-08-21",
+      "hour": 13,
+      "actual": 827,
+      "predicted": 890
+    },
+    {
+      "date": "2018-10-21",
+      "hour": 14,
+      "actual": 1642,
+      "predicted": 1724
+    },
+    {
+      "date": "2018-08-03",
+      "hour": 14,
+      "actual": 575,
+      "predicted": 582
+    },
+    {
+      "date": "2018-07-16",
+      "hour": 2,
+      "actual": 469,
+      "predicted": 395
+    },
+    {
+      "date": "2018-03-08",
+      "hour": 16,
+      "actual": 594,
+      "predicted": 536
+    },
+    {
+      "date": "2018-10-24",
+      "hour": 23,
+      "actual": 884,
+      "predicted": 820
+    },
+    {
+      "date": "2018-03-12",
+      "hour": 12,
+      "actual": 581,
+      "predicted": 672
+    },
+    {
+      "date": "2018-03-09",
+      "hour": 22,
+      "actual": 521,
+      "predicted": 484
+    },
+    {
+      "date": "2018-01-01",
+      "hour": 7,
+      "actual": 81,
+      "predicted": 143
+    },
+    {
+      "date": "2017-12-12",
+      "hour": 3,
+      "actual": 54,
+      "predicted": 65
+    },
+    {
+      "date": "2018-03-29",
+      "hour": 10,
+      "actual": 482,
+      "predicted": 554
+    },
+    {
+      "date": "2017-12-23",
+      "hour": 10,
+      "actual": 235,
+      "predicted": 273
+    },
+    {
+      "date": "2017-12-02",
+      "hour": 7,
+      "actual": 146,
+      "predicted": 104
+    },
+    {
+      "date": "2018-11-15",
+      "hour": 13,
+      "actual": 883,
+      "predicted": 957
+    },
+    {
+      "date": "2018-09-05",
+      "hour": 1,
+      "actual": 748,
+      "predicted": 536
+    },
+    {
+      "date": "2017-12-18",
+      "hour": 21,
+      "actual": 148,
+      "predicted": 384
+    },
+    {
+      "date": "2017-12-05",
+      "hour": 3,
+      "actual": 62,
+      "predicted": 61
+    },
+    {
+      "date": "2018-01-28",
+      "hour": 1,
+      "actual": 103,
+      "predicted": 128
+    },
+    {
+      "date": "2018-11-15",
+      "hour": 7,
+      "actual": 883,
+      "predicted": 1113
+    },
+    {
+      "date": "2018-08-14",
+      "hour": 7,
+      "actual": 1097,
+      "predicted": 1083
+    },
+    {
+      "date": "2018-08-07",
+      "hour": 18,
+      "actual": 2274,
+      "predicted": 2207
+    },
+    {
+      "date": "2018-08-03",
+      "hour": 9,
+      "actual": 784,
+      "predicted": 780
+    },
+    {
+      "date": "2018-02-21",
+      "hour": 10,
+      "actual": 244,
+      "predicted": 196
+    },
+    {
+      "date": "2018-08-06",
+      "hour": 6,
+      "actual": 546,
+      "predicted": 522
+    },
+    {
+      "date": "2018-04-02",
+      "hour": 11,
+      "actual": 662,
+      "predicted": 805
+    },
+    {
+      "date": "2018-10-07",
+      "hour": 7,
+      "actual": 345,
+      "predicted": 238
+    },
+    {
+      "date": "2018-02-08",
+      "hour": 15,
+      "actual": 286,
+      "predicted": 257
+    },
+    {
+      "date": "2018-11-02",
+      "hour": 22,
+      "actual": 1106,
+      "predicted": 1184
+    },
+    {
+      "date": "2018-07-11",
+      "hour": 18,
+      "actual": 2931,
+      "predicted": 2483
+    },
+    {
+      "date": "2017-12-04",
+      "hour": 1,
+      "actual": 186,
+      "predicted": 156
+    },
+    {
+      "date": "2018-08-17",
+      "hour": 9,
+      "actual": 1069,
+      "predicted": 1058
+    },
+    {
+      "date": "2018-01-31",
+      "hour": 19,
+      "actual": 270,
+      "predicted": 377
+    },
+    {
+      "date": "2018-03-05",
+      "hour": 4,
+      "actual": 4,
+      "predicted": 28
+    },
+    {
+      "date": "2018-07-07",
+      "hour": 20,
+      "actual": 2232,
+      "predicted": 2258
+    },
+    {
+      "date": "2017-12-30",
+      "hour": 0,
+      "actual": 240,
+      "predicted": 281
+    },
+    {
+      "date": "2017-12-07",
+      "hour": 12,
+      "actual": 431,
+      "predicted": 309
+    },
+    {
+      "date": "2017-12-15",
+      "hour": 17,
+      "actual": 464,
+      "predicted": 441
+    },
+    {
+      "date": "2018-01-10",
+      "hour": 0,
+      "actual": 61,
+      "predicted": 22
+    },
+    {
+      "date": "2018-04-17",
+      "hour": 10,
+      "actual": 731,
+      "predicted": 713
+    },
+    {
+      "date": "2018-05-01",
+      "hour": 15,
+      "actual": 1639,
+      "predicted": 1601
+    },
+    {
+      "date": "2018-02-19",
+      "hour": 8,
+      "actual": 646,
+      "predicted": 699
+    },
+    {
+      "date": "2018-11-26",
+      "hour": 0,
+      "actual": 387,
+      "predicted": 297
+    },
+    {
+      "date": "2018-05-20",
+      "hour": 12,
+      "actual": 1313,
+      "predicted": 1392
+    }
+  ]
+}

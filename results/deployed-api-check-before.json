@@ -1,0 +1,236 @@
+[
+  {
+    "name": "health",
+    "request": {
+      "method": "GET",
+      "path": "/health",
+      "body": null
+    },
+    "status": 200,
+    "response": {
+      "status": "ok",
+      "model_path": "models/model.joblib",
+      "model_version": "d7a782f5853d",
+      "build_revision": "bef1076dd9185fe36669d6bb13975c46d48c9e45"
+    }
+  },
+  {
+    "name": "정상 입력",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": 18,
+        "temperature": 25.0,
+        "humidity": 50,
+        "rainfall": 0.0,
+        "holiday": false
+      }
+    },
+    "status": 200,
+    "response": {
+      "predicted_rentals": 3266,
+      "unit": "대",
+      "request_id": "197418e6-e9ff-4a2f-9f44-ec07ddec3372"
+    }
+  },
+  {
+    "name": "시간 25",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": 25,
+        "temperature": 25.0,
+        "humidity": 50,
+        "rainfall": 0.0,
+        "holiday": false
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "hour",
+          "reason": "시간(0~23 정수)은(는) 0~23이어야 합니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "습도에 문자",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": 18,
+        "temperature": 25.0,
+        "humidity": "많음",
+        "rainfall": 0.0,
+        "holiday": false
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "humidity",
+          "reason": "습도(%)은(는) 숫자여야 합니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "강수량 누락",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": 18,
+        "temperature": 25.0,
+        "humidity": 50,
+        "holiday": false
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "rainfall",
+          "reason": "필수 항목이 없습니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "피드백 정상",
+    "request": {
+      "method": "POST",
+      "path": "/feedback",
+      "body": {
+        "request_id": "197418e6-e9ff-4a2f-9f44-ec07ddec3372",
+        "actual_rentals": 3000
+      }
+    },
+    "status": 200,
+    "response": {
+      "status": "ok",
+      "request_id": "197418e6-e9ff-4a2f-9f44-ec07ddec3372",
+      "matched": true,
+      "actual_rentals": 3000,
+      "error": 266,
+      "reward": -266
+    }
+  },
+  {
+    "name": "피드백 모르는 id",
+    "request": {
+      "method": "POST",
+      "path": "/feedback",
+      "body": {
+        "request_id": "unknown-id",
+        "actual_rentals": 3000
+      }
+    },
+    "status": 200,
+    "response": {
+      "status": "ok",
+      "request_id": "unknown-id",
+      "matched": false,
+      "actual_rentals": 3000,
+      "error": null,
+      "reward": null
+    }
+  },
+  {
+    "name": "피드백 음수",
+    "request": {
+      "method": "POST",
+      "path": "/feedback",
+      "body": {
+        "request_id": "197418e6-e9ff-4a2f-9f44-ec07ddec3372",
+        "actual_rentals": -5
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "actual_rentals",
+          "reason": "실제 대여 수는 0~10000이어야 합니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "피드백 id 누락",
+    "request": {
+      "method": "POST",
+      "path": "/feedback",
+      "body": {
+        "actual_rentals": 3000
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "request_id",
+          "reason": "/predict 응답의 request_id(문자열)가 필요합니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "기온 NaN",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": 18,
+        "temperature": NaN,
+        "humidity": 50,
+        "rainfall": 0.0,
+        "holiday": false
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "temperature",
+          "reason": "기온(°C)은(는) 유한한 숫자여야 합니다"
+        }
+      ]
+    }
+  },
+  {
+    "name": "시간 NaN",
+    "request": {
+      "method": "POST",
+      "path": "/predict",
+      "body": {
+        "date": "2018-06-15",
+        "hour": NaN,
+        "temperature": 25.0,
+        "humidity": 50,
+        "rainfall": 0.0,
+        "holiday": false
+      }
+    },
+    "status": 422,
+    "response": {
+      "errors": [
+        {
+          "field": "hour",
+          "reason": "시간(0~23 정수)은(는) 유한한 숫자여야 합니다"
+        }
+      ]
+    }
+  }
+]

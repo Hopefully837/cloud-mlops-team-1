@@ -1,0 +1,113 @@
+{
+  "method": "이전에 고른 입력·모델을 그대로 두고, 학습용에 로그 행만 더해 다시 학습 (고르는 단계 생략)",
+  "config": {
+    "feature_set": "offday+month+dow",
+    "features": [
+      "Hour",
+      "Temperature(°C)",
+      "Humidity(%)",
+      "Rainfall(mm)",
+      "is_offday",
+      "month",
+      "dow"
+    ],
+    "model": "gradient_boosting"
+  },
+  "data": {
+    "source_sha256": "9fc6e01d06b37e0640ad7b1c84d06c8bd75e9f36f53deeee9b8f8a9863a94dce",
+    "extra_sha256": "9aaaf82c4bef2faf7a3d2fec7a5d56e65e811c9c4435e387c6b8b1fe4a64aa2a",
+    "train_rows_before": 5068,
+    "extra_rows_from_logs": 1690,
+    "train_rows_after": 6758,
+    "extra_share_pct": 25.01,
+    "test_rows": 1690,
+    "test_note": "평가용은 원본 분할 그대로이며 학습에 쓰지 않았다(로그 중 평가용과 겹친 행은 전처리에서 제외)"
+  },
+  "test": {
+    "baseline_mae": 520.52,
+    "before": {
+      "mae": 85.11,
+      "r2": 0.9514
+    },
+    "after": {
+      "mae": 83.97,
+      "r2": 0.9527
+    },
+    "mae_diff(after-before)": -1.142,
+    "mae_diff_95ci": [
+      -3.317,
+      1.013
+    ],
+    "mae_change_pct": -1.34,
+    "verdict": "차이 없음 (95% 신뢰구간이 0을 포함)",
+    "identical_predictions_pct": 0.0
+  },
+  "by_group": {
+    "전체": {
+      "rows": 1690,
+      "mae_before": 85.11,
+      "mae_after": 83.97,
+      "diff": -1.14
+    },
+    "새벽 0~5시": {
+      "rows": 421,
+      "mae_before": 44.34,
+      "mae_after": 44.06,
+      "diff": -0.29
+    },
+    "오전 6~11시": {
+      "rows": 408,
+      "mae_before": 86.82,
+      "mae_after": 86.37,
+      "diff": -0.45
+    },
+    "오후 12~17시": {
+      "rows": 422,
+      "mae_before": 92.3,
+      "mae_after": 86.35,
+      "diff": -5.95
+    },
+    "저녁 18~23시": {
+      "rows": 439,
+      "mae_before": 115.71,
+      "mae_after": 117.73,
+      "diff": 2.02
+    },
+    "평일": {
+      "rows": 1137,
+      "mae_before": 81.41,
+      "mae_after": 81.22,
+      "diff": -0.18
+    },
+    "주말": {
+      "rows": 489,
+      "mae_before": 90.86,
+      "mae_after": 88.06,
+      "diff": -2.8
+    },
+    "공휴일": {
+      "rows": 80,
+      "mae_before": 100.14,
+      "mae_after": 95.68,
+      "diff": -4.46
+    },
+    "비 옴(강수 > 0)": {
+      "rows": 100,
+      "mae_before": 111.39,
+      "mae_after": 114.56,
+      "diff": 3.17
+    }
+  },
+  "checks": {
+    "이전 모델 평가 MAE가 results/metrics.json과 같은가": true,
+    "이전 모델 평가 MAE(metrics.json)": 85.11
+  },
+  "model_path": "models\\model-retrained.joblib",
+  "model_sha256": "33353f858e24693a8021eaabaaa4b7efaf1e5e9627cdd0d4e2d01e5483a69a2b",
+  "promoted_to": "models/model.joblib",
+  "limitation": [
+    "평가용은 원본 자료의 랜덤 20%라서 미래 예측 성능과는 다르다(시간 순서 분할이 아님).",
+    "로그 행의 실제값은 사람이 입력한 값이다. 팀 테스트·시뮬레이션 로그면 실제 이용자 피드백이 아니다.",
+    "로그 행이 학습 자료에 비해 적으면 모델이 거의 바뀌지 않는다(extra_share_pct 참고)."
+  ]
+}
